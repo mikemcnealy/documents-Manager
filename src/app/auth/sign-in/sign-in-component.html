@@ -1,17 +1,18 @@
 
   <!-- <samp mat-dialog-title>X</samp> -->
   <!-- <div mat-dialog-content> -->
-    <div >
+    <div>
+      <form [formGroup]="userForm" (ngSubmit)="LogIn()">
       <div class="logIn-div">User log in</div>
         <div class="row">
-       <form [formGroup]="userForm" (ngSubmit)="LogIn()">
+
         <!-- (ngSubmit)="LogIn()" -->
 
-       </form>
+
        <mat-form-field appearance="outline">
         <mat-label>Use name</mat-label>
         <div class="form-group">
-          <input matInput placeholder="Placeholder" class="form-control">
+          <input matInput placeholder="Placeholder" formControlName="email">
         </div>
         <mat-icon  matSuffix>person</mat-icon>
         <!-- <mat-hint>Hint</mat-hint> -->
@@ -20,11 +21,12 @@
       <div class="example-container">
 
 
-        
+
         <mat-form-field appearance="outline">
           <mat-label>Password</mat-label>
           <div class="form-group">
-            <input matInput placeholder="Placeholder" [type]="type" class="form-control">
+            <!-- <input matInput placeholder="Placeholder" [type]="type" formControlName="password" class="form-control"> -->
+            <input matInput placeholder="Placeholder" formControlName="password">
           </div>
         <mat-icon matSuffix (click)="hideShowPass()">{{visibility}}</mat-icon>
           <!-- <mat-icon  (click)="hideShowPass()">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
@@ -35,7 +37,8 @@
     </div>
     <div class="action">
       <button mat-raised-button  color="primary" mat-dialog-close>close</button>
-      <button  mat-raised-button  color="primary"  type="submit" mat-dialog-close>sign in</button>
+      <!-- <button  mat-raised-button  color="primary"  type="submit" mat-dialog-close>sign in</button> -->
+      <button  mat-raised-button  color="primary" (click)="LogIn()"  mat-dialog-close>sign in</button>
     </div>
 <small>
   &nbsp;
@@ -50,4 +53,6 @@
     <button class="bnt" mat-raised-button mat-dialog-close>sign up</button>
    </div>
   </div> -->
+</form>
+  </div>
 

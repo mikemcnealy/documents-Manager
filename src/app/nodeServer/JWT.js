@@ -1,11 +1,17 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const app = express();
-app.use((req,res,next)=>{
-   res.header("Access-Control-Allow-Origin","*");
-   res.header("Access-Control-Allow-Headers","origin,X-Requested-With,Content-Type,Accept");
-   next();
-})
+const cors = require('cors');
+app.use(bodyParser.urlencoded());
+app.use(cors());
+// app.use((req,res,next)=>{
+//    res.header("Access-Control-Allow-Origin","*");
+//    res.header("Access-Control-Allow-Headers","origin,X-Requested-With,Content-Type,Accept");
+//    next();
+// })
+app.enableCors({ origin: "*" });
+
 app.get('/api',(req,res)=>{
  res.json({
   message:'Welcome to the API'
@@ -18,6 +24,7 @@ app.post('/api/posts',(req,res)=>{
 });
 app.post('/api/login',(req,res)=>{
   //Mock User
+  console.log(req.body)
   const user={
     id:11,
     username:'mike',

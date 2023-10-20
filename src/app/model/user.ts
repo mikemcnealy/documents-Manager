@@ -1,7 +1,8 @@
 export interface User{
     id :number
-    name:string
+    name:string,
     password:string,
+    email:string,
     accountStatusID:number,
     LastLogIn:Date,
     roleID:number,
