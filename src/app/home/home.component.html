@@ -1,0 +1,81 @@
+<app-header></app-header>
+<div class="SearchDIV">
+  <samp><b class="">Search:</b></samp>
+  <select [(ngModel)]="model">
+    <option *ngFor="let item of list" [value]="item">{{item}}</option>
+  </select>
+  &nbsp;
+  <select [(ngModel)]="model">
+    <option *ngFor="let item of list " [value]="item">{{item}}</option>
+  </select>
+  &nbsp;
+  <samp  class="fa fa-search icon" (click)="search()"></samp>
+  &nbsp;&nbsp;
+  &nbsp;&nbsp;
+  &nbsp;&nbsp;
+
+  <samp>Storane Capacity color bar indicator&nbsp;=></samp>
+  <samp class="green">&nbsp;&nbsp;</samp>
+  <samp>Capacity 0 to 70%</samp>&nbsp;|
+  <samp class="yellow">&nbsp;&nbsp;</samp>
+  <samp>Capacity 71 to 80%</samp>&nbsp;|
+<samp class="red">&nbsp;&nbsp;</samp>
+  <samp>Capacity 81 to 100%</samp>
+
+</div>
+
+<div class="container">
+ <div>
+ <!-- <samp><b>Location</b></samp> <app-progress-bar></app-progress-bar>
+  <br>
+  <samp><b>Location</b></samp> <app-progress-bar></app-progress-bar>
+  <br>
+  <samp><b>Location</b></samp> <app-progress-bar></app-progress-bar> -->
+  <table>
+    <tr>
+      <th>Customer boxs  Storage Location</th>
+      <th>Storane Capacity</th>
+      <th> Customer </th>
+      <th>Document Action</th>
+    </tr>
+    <!-- add *ngFor record-->
+    <tr *ngFor="let item of record let i = index">
+      <td>
+        <samp  class="fa fa-user"></samp>
+        &nbsp;
+        FNF &nbsp;=>
+        &nbsp;
+        &nbsp;
+        <samp  class="fa fa-building"></samp>
+
+        <samp><b>Warehouse# {{item.WarehouseId}} Rack #{{item.Rack}}</b></samp>
+      </td>
+      <td><app-progress-bar [capacity]=item.Capacity></app-progress-bar></td>
+      <td>
+        <samp  class="fa fa-envelope-o" matTooltip="email client " matTooltipPosition="above"></samp>
+        &nbsp;
+        &nbsp;
+        <samp  class="fa fa-phone" matTooltip="Client  Phone Number" matTooltipPosition="above"></samp>
+        &nbsp;
+        &nbsp;
+        <samp  class="fa fa-id-card-o" matTooltip="Client profile" matTooltipPosition="above"></samp>
+      </td>
+      <td>
+        <button mat-raised-button color="primary" (click)="DocAction(i,'add')">Add Box</button>
+        <button mat-raised-button color="primary" (click)="DocAction(i,'move')">move Box</button>
+        <samp  (click)="faPOpenopUp('Schedule File pickup',i)" class="fa fa-truck" matTooltip="Schedule document file pickup" matTooltipPosition="above"></samp>
+        &nbsp;
+        &nbsp;
+        <samp (click)="faPOpenopUp('invoicePrint',i)" class="fa fa-print" matTooltip="Client invoice" matTooltipPosition="above"></samp>
+        &nbsp;
+        &nbsp;
+        <samp (click)="faPOpenopUp('payment',i)" class="fa fa-money" matTooltip="make a payment" matTooltipPosition="above"></samp>
+      </td>
+    </tr>
+  </table>
+ </div>
+</div>
+<!--
+<div id="overlay"></div> -->
+<!-- <app-fooler></app-fooler> -->
+<!--<app-progress-bar></app-progress-bar> -->

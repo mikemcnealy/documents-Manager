@@ -1,0 +1,170 @@
+{
+  "User": [
+    {
+      "id": 1,
+      "roleID": 1,
+      "name": "wwmike",
+      "password": "mike123",
+      "LastLogIn": "10/02/2023",
+      "Lock": "0"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ],
+  "Roles": [
+    {
+      "id": 1,
+      "type": "admin"
+    },
+    {
+      "id": 2,
+      "type": "Customer"
+    }
+  ],
+  "Customer": [
+    {
+      "id": 1,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 1,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 2,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 3,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 4,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 5,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 6,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 7,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 8,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 9,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 10,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    },
+    {
+      "id": 11,
+      "name": "FNF",
+      "email": "",
+      "phone": ""
+    }
+  ],
+  "Warehouse": [
+    {
+      "Customer": 1,
+      "Capacity": 18,
+      "Rack": 10,
+      "WarehouseId": 1
+    },
+    {
+      "Customer": 2,
+      "Capacity": 40,
+      "Rack": 1,
+      "WarehouseId": 1
+    },
+    {
+      "Customer": 3,
+      "Capacity": 70,
+      "Rack": 1,
+      "WarehouseId": 3
+    },
+    {
+      "Customer": 4,
+      "Capacity": 88,
+      "Rack": 1,
+      "WarehouseId": 3
+    },
+    {
+      "Customer": 5,
+      "Capacity": 80,
+      "Rack": 1,
+      "WarehouseId": 32
+    },
+    {
+      "Customer": 6,
+      "Capacity": 80,
+      "Rack": 1,
+      "WarehouseId": 11
+    },
+    {
+      "Customer": 7,
+      "Capacity": 88,
+      "Rack": 1,
+      "WarehouseId": 4
+    },
+    {
+      "Customer": 8,
+      "Capacity": 80,
+      "Rack": 1,
+      "WarehouseId": 15
+    },
+    {
+      "Customer": 9,
+      "Capacity": 28,
+      "Rack": 1,
+      "WarehouseId": 4
+    },
+    {
+      "Customer": 10,
+      "Capacity": 30,
+      "Rack": 1,
+      "WarehouseId": 21
+    },
+    {
+      "Customer": 11,
+      "Capacity": 40,
+      "Rack": 1,
+      "WarehouseId": 1
+    }
+  ]
+}

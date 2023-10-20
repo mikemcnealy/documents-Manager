@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+}
+
+.itemDiv{
+  border: 1px solid blue;
+  margin-left: 6px;
+  margin-top: 58px;
+  width: 97%;
+  padding-top: 0px;
+  padding-left: 20px;
+
+
+
+}
+span{
+  font-size:xx-large;
+  margin-left:30% ;
+}
+.btn{
+  margin-top:20%;
+  margin-left: 50%;
+}

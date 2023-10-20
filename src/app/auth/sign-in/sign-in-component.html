@@ -1,0 +1,53 @@
+
+  <!-- <samp mat-dialog-title>X</samp> -->
+  <!-- <div mat-dialog-content> -->
+    <div >
+      <div class="logIn-div">User log in</div>
+        <div class="row">
+       <form [formGroup]="userForm" (ngSubmit)="LogIn()">
+        <!-- (ngSubmit)="LogIn()" -->
+
+       </form>
+       <mat-form-field appearance="outline">
+        <mat-label>Use name</mat-label>
+        <div class="form-group">
+          <input matInput placeholder="Placeholder" class="form-control">
+        </div>
+        <mat-icon  matSuffix>person</mat-icon>
+        <!-- <mat-hint>Hint</mat-hint> -->
+      </mat-form-field>
+      &nbsp;
+      <div class="example-container">
+
+
+        
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <div class="form-group">
+            <input matInput placeholder="Placeholder" [type]="type" class="form-control">
+          </div>
+        <mat-icon matSuffix (click)="hideShowPass()">{{visibility}}</mat-icon>
+          <!-- <mat-icon  (click)="hideShowPass()">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
+          <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+        </div>
+
+    </div>
+    <div class="action">
+      <button mat-raised-button  color="primary" mat-dialog-close>close</button>
+      <button  mat-raised-button  color="primary"  type="submit" mat-dialog-close>sign in</button>
+    </div>
+<small>
+  &nbsp;
+  <a class="forgotDIV"><span style="cursor: pointer; display: contents;">forgot password</span></a>
+</small>
+  <!-- </div> -->
+  <!-- <div mat-dialog-action>
+   <div class="container">
+    <button class="bnt"mat-raised-button  (click)="closepopup()">close</button>
+
+
+    <button class="bnt" mat-raised-button mat-dialog-close>sign up</button>
+   </div>
+  </div> -->
+

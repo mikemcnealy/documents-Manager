@@ -1,0 +1,49 @@
+
+<div >
+  <div class="logIn-div" >Rigister New User</div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Use name</mat-label>
+        <input matInput placeholder="Placeholder">
+        <mat-icon matSuffix>person</mat-icon>
+        <!-- <mat-hint>Hint</mat-hint> -->
+      </mat-form-field>
+      &nbsp;
+      <div class="example-container">
+        <mat-form-field appearance="outline">
+          <mat-label>Use Email</mat-label>
+          <input matInput placeholder="Placeholder">
+          <mat-icon matSuffix>mail</mat-icon>
+          <!-- <mat-hint>Hint</mat-hint> person-->
+        </mat-form-field>
+    </div>
+
+</div>
+<div class="row">
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Placeholder" [type]="type">
+  <mat-icon matSuffix (click)="hideShowPass()">{{visibility}}</mat-icon>
+    <!-- <mat-icon  (click)="hideShowPass()">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
+    <!-- <mat-hint>Hint</mat-hint> -->
+  </mat-form-field>
+  &nbsp;
+  <div class="example-container">
+    <mat-form-field appearance="outline">
+      <mat-label>Confrim Password</mat-label>
+      <input matInput placeholder="Placeholder" [type]="type">
+    <mat-icon matSuffix (click)="hideShowPass()">{{visibility}}</mat-icon>
+      <!-- <mat-icon  (click)="hideShowPass()">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+</div>
+
+</div>
+<div class="action">
+  <button mat-raised-button  color="primary" mat-dialog-close>close</button>
+  <button mat-raised-button  color="primary" (click)="logIn('wwmike','mike123')">Submit</button>
+</div>
+<small>
+&nbsp;
+<!-- <a class="forgotDIV"><span style="cursor: pointer; display: contents;">forgot password</span></a> -->
+</small>

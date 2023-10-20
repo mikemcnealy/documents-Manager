@@ -1,0 +1,11 @@
+
+.ustom-modalbox >  mat-dialog-container {
+  position:absolute;
+  padding: 0px;
+  background-color:#ffff;
+  margin-top:180px;
+  width: 500px;
+  height: 332px;
+  padding: 0,23px;
+}
+

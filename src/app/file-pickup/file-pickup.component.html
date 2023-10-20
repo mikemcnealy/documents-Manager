@@ -1,0 +1,66 @@
+
+<h1 class="mat-title" mat-dialog-title>{{inputdata.title}}</h1>
+<div mat-dialog-content class="dialog-content">
+<div class="mat-form-field">
+  <!-- <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon> -->
+
+  <mat-form-field>
+    <mat-label>Enter Schedule Date pickup</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+      <input matStartDate placeholder="Start date">
+      <input matEndDate placeholder="End date">
+    </mat-date-range-input>
+    <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+  </mat-form-field>
+  <mat-form-field hintLabel="Max 10 characters">
+    <mat-label>Enter some input</mat-label>
+    <input matInput #input maxlength="10" placeholder="Ex. Nougat">
+    <mat-hint align="end">{{input.value.length}}/10</mat-hint>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Select me</mat-label>
+    <mat-select>
+      <mat-option value="option">Option</mat-option>
+    </mat-select>
+    <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
+  </mat-form-field>
+  <mat-form-field>
+    <select matNativeControl required>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  </mat-form-field>
+  <!-- <mat-form-field>
+    <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field> -->
+  <div>
+
+  </div>
+</div>
+  <div>
+
+  </div>
+
+<div>
+
+<!-- <mat-form-field>
+  <input matInput [matDatepicker]="myDataPicker">
+  <mat-datepicker-toggle [for]="myDataPicker" matSuffix></mat-datepicker-toggle>
+ <mat-datepicker #myDataPicker></mat-datepicker>
+</mat-form-field> -->
+
+</div>
+</div>
+
+<div mat-dialog-actions class="mat-action">
+  <button mat-raised-button color="primary" mat-dialog-close>close</button>
+  <button mat-raised-button color="primary">Save</button>
+</div>

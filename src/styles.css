@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+.ustom-modalbox >  mat-dialog-container {
+  position:absolute;
+  padding: 0px;
+  background-color:#ffff;
+  width: 530px;
+  height: 210px;
+  padding: 0,23px;
+  margin-left: 40%;
+  border-radius: 8px;
+  margin-top: 150px;
+  border: 2px solid #000;
+
+}
+.ustom-modalbox-Register{
+  position:absolute;
+  padding: 0px;
+  background-color:#ffff;
+  width: 530px;
+  height: 306px;
+  padding: 0,23px;
+  margin-left: 8%;
+  border-radius: 8px;
+  margin-top: -390px;
+  border: 2px solid #000;
+}
+.faPopUp-dialog-1{
+  position:absolute;
+  padding: 0px;
+  background-color:#ffff;
+  width: 90%;
+  height: 700px;
+  padding: 0,23px;
+  border-radius: 8px;
+
+  /* display: flex;
+  justify-content: center; */
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,33 @@
+
+.bar{
+  height: 100%;
+  width: 100%;
+  /* color: #000; */
+  background-color: #ffff;
+  color: #000;
+  border-style:solid ;
+  border-color: #000;
+  border-width: 2px
+
+
+
+};
+.bar div{
+  background-color:#000;
+  height:100%;
+
+}
+
+.span{
+  color: #000;
+  font-weight: bold;
+
+  height:100%;
+  text-align: center;
+
+}
+.bar span {
+margin-left: 50px;
+font-weight: bold;
+
+}

@@ -1,0 +1,41 @@
+user:[{
+  id:Number,
+  userName:String,
+  password:String,
+  roleID:Number,
+  lastLogin:Date,
+  ClientID:Number,
+  lock:Boolean
+}]
+Client:[{
+  id:Number,
+  name:String,
+  email:String,
+  phoneNumber:String
+
+}]
+role:[
+  {
+    id:Number,
+    type:String
+  }
+]
+document:[{
+  id:Number,
+  ClientID:Number,
+  WarehouseID:Number,
+  title:String
+}]
+Warehouse:[{
+  id:Number,
+  Rack:Number,
+  storageCapacity:Number,
+  documentID:Number,
+  ClientID:Number
+}]
+Invoice:[
+  {
+    id:Number,
+    ClientID:Number
+  }
+]
