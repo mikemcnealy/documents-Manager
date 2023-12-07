@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from '../app/home/home.component';
 import {SplashPageComponent} from '../app/splash-page/splash-page.component'
-import { InvoiceComponent } from './invoice/invoice.component';
+import { InvoiceComponent } from './customer-Invoice/invoice/invoice.component';
 import { AddCustomComponent } from './add-custom/add-custom.component'
 import { CustomHomePageComponent } from './custom-home-page/custom-home-page.component'
 import {ErrorComponent} from './error/error.component'

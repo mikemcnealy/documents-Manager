@@ -145,14 +145,12 @@
     {
       "id": 1,
       "name": "FNF",
-      "email": "",
-      "phone": ""
-    },
-    {
-      "id": 1,
-      "name": "FNF",
-      "email": "",
-      "phone": ""
+      "email": "mike.mcnealy@outlook.com",
+      "address":"1234 Borward",
+      "City":"Jacksonville",
+      "State":"FL",
+      "Zip":"32218",
+      "phone": "(904)456-7890"
     },
     {
       "id": 2,
@@ -282,5 +280,6 @@
       "Rack": 1,
       "WarehouseId": 1
     }
-  ]
+  ],
+  "Invoice":[]
 }

@@ -1,4 +1,4 @@
-import { InvoiceComponent } from './../invoice/invoice.component';
+import { InvoiceComponent } from '../customer-Invoice/invoice/invoice.component';
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { MatDialog } from '@angular/material/dialog';
@@ -16,6 +16,7 @@ import { window } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   record: any;
+  CustomerID!:number;
   model: any;
   list: string[] = [];
 
@@ -56,12 +57,14 @@ export class HomeComponent implements OnInit {
         },
       });
     } else if (popUp === 'invoicePrint') {
+         this.CustomerID =id;
       let dialogRef = this.dialog.open(InvoiceComponent, {
         panelClass: 'faPopUp-dialog-1',
         enterAnimationDuration: '1000ms',
         exitAnimationDuration: '1000ms',
         data: {
           title: popUp,
+          CustomerID: this.CustomerID
         },
       });
     } else if (popUp === 'payment') {

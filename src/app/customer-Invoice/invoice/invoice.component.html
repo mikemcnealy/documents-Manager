@@ -1,0 +1,87 @@
+<div class="nainContainer">
+  <div id="invoice">
+    <!-- <samp class="fa fa-archive box"></samp> -->
+    <div>
+      <samp><b>
+          mike software company INC
+        </b>
+        <br>1234 Borward
+        <br>Jacksonville,FL 32123
+      </samp>
+    </div>
+    <br>
+    <b>BILLED TO:</b>
+    <br>
+    <samp>FNF</samp>
+    <br>
+    <div class="container">
+      <section>
+        <samp>12721 Daylight TRL</samp>
+        <br>
+        <samp>Jackspnville,FL 32218</samp>
+      </section>
+      <section>
+        <samp><h2>Invoice NO: {{InvoiseNumber}}</h2></samp>
+        <br>
+        <samp><b>Date:</b>{{date}}</samp>
+      </section>
+    </div>
+    <h1>Customer Invoice</h1>
+    <section class="header">
+
+      <table border="1" width="100%">
+        <tr>
+          <th *ngIf="readonly">&nap;</th>
+          <th>Date</th>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>
+
+          </td>
+          <td>
+            <mat-form-field class="Input" appearance="fill">
+            <input class="Input"  matInput type="text">
+          </mat-form-field>
+          </td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+      </table>
+      <br>
+      <samp class="Total"><h3><b>Total $500.00</b></h3></samp>
+    </section>
+    <section style="text-align: center; margin-top: 29px; font-size: 40px;">Thank
+      you for your business</section>
+  </div>
+  <br>
+  <br>
+  <div>
+    <button *ngIf="false" mat-raised-button color="primary" mat-dialog-close>Add
+      New Line Item</button>
+    <button *ngIf="false" mat-raised-button color="primary" mat-dialog-close>Edit
+      Line Item</button>
+    <button mat-raised-button color="primary" (click)="CreateInvoice()"
+      *ngIf="true ">Create Invoice</button>
+    <button *ngIf="false" mat-raised-button color="primary" ngxPrint
+      printSectionId="invoice">Print Invoice</button>
+    <button mat-raised-button color="primary" mat-dialog-close>close</button>
+
+    <!-- <button mat-raised-button color="primary" mat-dialog-close>Edit Line Item</button> -->
+  </div>
+
+  <div>
+    <section>
+
+    </section>
+    <!-- <section >
+    <button mat-raised-button color="primary">Print</button>
+    </section> -->
+  </div>
+
+</div>

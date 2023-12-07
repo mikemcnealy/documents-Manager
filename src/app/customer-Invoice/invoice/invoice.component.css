@@ -1,0 +1,118 @@
+.container{
+  display: flex;
+
+}
+.container section:nth-child(2){
+  margin-left: 60%;
+}
+.box{
+  font-size:60px;
+  margin-left: 1px;
+  margin-bottom: 10px;
+
+}
+.container section:nth-child(3){
+border: 1px solid red;
+
+}
+section
+.bnt{
+ display: flex;
+ justify-content: center;
+ margin-top: 30px;
+ margin-bottom: 20px;
+}h1{
+  margin-left: 40%;
+  font-size: xx-large;
+}
+.header{
+  border: 1px solid;
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 80%;
+}
+button:nth-child(1){
+ margin-left: 40%;
+ margin-right: 4px;
+
+}
+button:nth-child(2){
+
+  margin-right: 4px;
+
+ }
+.nainContainer{
+  border: 1px blue solid;
+  padding: 50px;
+}
+.Total{
+
+  text-align: center;
+}
+/* mat-form-field{
+  height: 6px;
+} */
+/* input,
+label {
+  margin: 0.4rem 0;
+} */
+/* input{
+  width: 99%;
+  height: 10px;
+  padding: 0;
+  border: none;
+  outline: none;
+} */
+.action{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.daye{
+  height: 0px;
+  margin-top: 0px;
+}
+::ng-deep .mat-mdc-form-infix{
+ background-color: red;
+ height: 5px;
+
+}
+::ng-deep .mdc-text-field{
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  color: aquamarine;
+}
+table td, th {
+  padding: 0;
+
+}
+:host mat-form-field{
+  background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+
+
+

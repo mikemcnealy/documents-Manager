@@ -18,6 +18,8 @@ export class AuthService {
      //t= new RoleType()
   }
   logIN(user: string, password: string) {
+   // alert(user)
+   // alert(password)
     //console.log(user+"  "+password)
     return this.db.get(`${this.jsonURL}/user?name=${user}&password=${password}`)
  }

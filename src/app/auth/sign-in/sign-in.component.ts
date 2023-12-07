@@ -100,7 +100,7 @@ export class SignInComponentComponent implements OnInit {
               let JWT = token;
               localStorage.setItem('token', JWT.token);
             });
-            this.snackBar.open("User In")
+            //this.snackBar.open("User In")
           this.router.navigateByUrl('/home');
         } else {
           this.router.navigateByUrl('access-error');

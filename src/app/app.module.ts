@@ -15,7 +15,7 @@ import {AppRoutingModule} from '../app/app-routing.module'
 import { FormsModule,ReactiveFormsModule ,FormControl,FormGroup} from '@angular/forms';
 import { NewDocumentComponent } from './new-document/new-document.component';
 import { ProfileComponent } from './profile/profile.component';
-import { InvoiceComponent } from './invoice/invoice.component';
+import { InvoiceComponent } from './customer-Invoice/invoice/invoice.component';
 import { FilePickupComponent } from './file-pickup/file-pickup.component';
 import {} from '../app/app-routing.module';
 import { AddCustomComponent } from './add-custom/add-custom.component';
@@ -24,7 +24,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { RackComponent } from './rack/rack.component';
 import { CustomHomePageComponent } from './custom-home-page/custom-home-page.component';
 import { MakePaymentComponent } from './make-payment/make-payment.component';
-import { ErrorComponent } from './error/error.component'
+import { ErrorComponent } from './error/error.component';
+import { CreateInvoiceComponent } from './Customer-Invoice/create-invoice/create-invoice.component';
+import { CardComponent } from './card/card.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +47,9 @@ import { ErrorComponent } from './error/error.component'
      RackComponent,
      CustomHomePageComponent,
      MakePaymentComponent,
-     ErrorComponent
+     ErrorComponent,
+     CreateInvoiceComponent,
+     CardComponent
   ],
   imports: [
     BrowserModule,
