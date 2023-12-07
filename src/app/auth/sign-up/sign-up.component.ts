@@ -69,7 +69,7 @@ export class SignUpComponent {
    }
    onSubmitRegister(){
       this.db.IsUserRegister(this.RegisterForm.value.email??'').subscribe((result)=>{
-        console.log('===================mike===============')
+        console.log('===================mike ===============')
         console.log(result)
       })
     //   alert(r)
